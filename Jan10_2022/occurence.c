@@ -2,6 +2,9 @@
 
 void count(int number){
   int arrkey[10],value = 0;
+  for(int i=0 ;i<=9;i++){
+    arrkey[i] = 0;
+  }
   while( number > 0){
     value = number%10;
     arrkey[value]++;
