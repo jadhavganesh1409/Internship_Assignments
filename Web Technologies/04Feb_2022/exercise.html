@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Only for Icons -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- For class -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Flex Box</title>
+
+	<style type="text/css">
+		.container{
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-evenly;
+			margin-top: 24px;
+		}
+
+		.container-inner{
+			padding: 10px;
+			width: 25%;
+			/*border: 1px solid black;*/
+		}
+
+		/*.second-container{
+			text-align: center;
+		}*/
+		.container :nth-child(2){ flex: 2; }
+
+		.footer-one{
+			display: flex;
+			/*background-color: #ECECEC;*/
+			justify-content: space-between;
+		}
+
+		footer{
+			margin-top: 40px;
+		}
+
+		.footer-one div{
+			padding: 20px;
+		}
+
+		footer div p a{
+			text-decoration: none;
+			color: blue;
+		}
+
+		.photofluorescent{
+			display: flex;
+		}
+
+		.photofluorescent-img{
+			margin-top: 20px;
+		}
+
+
+		.w3-panel p{
+			color: red;
+		}
+
+		.table-data{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+
+		/*.w3-ul{
+			border-radius: 10px;
+			margin-top: 16px;
+		}
+*/
+		.card{
+			display: flex;
+			flex-direction: column;
+		}
+		
+		/*.card-data div{
+			display: inline-block;
+		}*/
+
+		.search-bar{
+			/*margin-top: 16px;*/
+		}
+
+		.side-card .w3-ul .progress-bar .w3-light-grey{
+			margin-top: 5px;
+			margin-bottom: 20px;
+		}
+
+		.side-card .w3-ul .progress-bar .w3-light-grey div{
+			font-size: 12px;
+			color: white;
+		}
+
+		.search-bar {
+			display: inline-block;
+		}
+
+		.side-search{
+			width: 65%;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="w3-bar w3-black">
+		<a href="#" class="w3-bar-item w3-button"><i style="color: white;"class="fa fa-globe"></i> Logo</a>
+	    <a href="#" class="w3-bar-item w3-button">Home</a>
+	    <a href="#" class="w3-bar-item w3-button" >About</a>
+	    <a href="#" class="w3-bar-item w3-button" >Product</a>
+	    <div class="w3-dropdown-hover">
+	      <button class="w3-button">Services <i class="fa fa-caret-down"></i></button>
+	      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+	        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+	        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+	        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+	      </div>
+	    </div>
+	    <div class="w3-bar-item w3-right w3-small" style="height:20px; padding-top:5px;">
+	     	<input type="text" style="height:30px;" class="w3-bar-item w3-input w3-white w3-mobile w3-round w3-margin-left" placeholder="Email">
+		     <input type="text" style="height:30px;" class="w3-bar-item w3-input w3-white w3-mobile w3-round w3-margin-left" placeholder="Password">
+		    <button style="height:30px;" class="w3-bar-item w3-button w3-white w3-mobile w3-right w3-round w3-right w3-margin-left">Sign in</button>
+	    </div>
+  	</div>
+	<div class="container">
+		<div class="container-inner">
+			<div class="table-data">
+				<ul class="w3-ul w3-round w3-border w3-margin-bottom">
+				    <li class="w3-light-grey"><i class="fa fa-random"></i> Completely Synergize</li>
+				    <li>Resource Taxing</li>
+				    <li>Premier Niche Markets<span style="color: white;"class="w3-tag w3-round-xlarge w3-gray w3-right"> NEW </span></li>
+				    <li>Dynamically innovate</li>
+				    <li>Objectively innovate</li>
+				    <li>Proactively Envisioned</li>
+			  	</ul>
+
+			  	<ul class="w3-ul w3-round w3-border">
+				    <li class="w3-light-grey"><i class="fa fa-random"></i> Drammatically Engage</li>
+				    <li>Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains, Dramatically engage top-line web services vis-a-vis cutting-edge deliverables. <br><br><button class="w3-button w3-white w3-border w3-round">Engage</button></li>   
+			  	</ul>
+			</div>
+		</div>
+		<div class="container-inner second-container">
+			<div class="w3-panel w3-round w3-pale-red w3-display-container" style="margin-top: 0px;">
+			  <span onclick="this.parentElement.style.display='none'" class="w3-button w3-medium w3-display-right">&times;</span>
+			  <p class="w3-left"><strong>Synergize:</strong> Seamlessly visualize quality intellectual capital.</p>
+			</div>
+			<div class="card">
+				<div class="card-data w3-padding-bottom w3-border-bottom w3-margin-bottom">
+					<div style="width: 120px; height: 120px; background-color: #ECECEC;" class="card-img w3-quarter w3-left w3-margin-right">
+					</div>
+					<div class="card-text w3-threequarter w3-margin-left">
+						<h3 style="margin-top: -5px;">Premier Niche Markets</h2>
+						<p style="margin-top: -5px;">Photofluroscently engage worldwide methodologies with web-enabled technology. Interactively co-ordinate proactive e-commerece via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+						<p><i class="fa fa-comment"></i> 2 Comments &nbsp;<i class="fa fa-share"></i> 8 Shares</p>
+					</div>
+				</div>
+
+				<div class="card-data w3-padding-bottom w3-border-bottom w3-margin-bottom">
+					<div style="width: 120px; height: 120px; background-color: #ECECEC;" class="card-img w3-third w3-left w3-margin-right">
+					</div>
+					<div class="card-text w3-threequarter w3-margin-left">
+						<h3 style="margin-top: -5px;">Proactively Envisioned</h2>
+						<p style="margin-top: -5px;">Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products. Proactively envisioned multimedia based expertise and cross-media growth strategies.</p>
+						<p><i class="fa fa-comment"></i> 12 Comments &nbsp;<i class="fa fa-share"></i> 18 Shares</p>
+					</div>
+				</div>
+
+				<div class="card-data w3-padding-bottom w3-border-bottom w3-margin-bottom">
+					<div style="width: 120px; height: 120px; background-color: #ECECEC;" class="card-img w3-third w3-left w3-margin-right">
+					</div>
+					<div class="card-text w3-threequarter w3-margin-left">
+						<h3 style="margin-top: -5px;">Completely Synergize</h2>
+						<p style="margin-top: -5px;">Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer seriec for state of the art customer service.</p>
+						<p><i class="fa fa-comment"></i> 23 Comments &nbsp;<i class="fa fa-share"></i> 22 Shares</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-inner">
+			<div class="search-bar w3-small">
+				<div class="w3-third side-search">
+					<input class="w3-round w3-input w3-border" type="text">
+				</div>
+				<div class="w3-third w3-right">
+					<button class="w3-button w3-round w3-white w3-border"><i class="fa fa-search"></i> Search</button>
+				</div>
+				<!-- <input class="w3-round w3-input w3-border" type="text">
+				<button class="w3-button w3-round w3-white w3-border"><i class="fa fa-search"></i> Search</button> -->
+			</div>
+			<div class="side-card">
+				<ul class="w3-ul w3-round w3-border w3-margin-bottom">
+				    <li class="w3-light-grey"><i class="fa fa-tachometer"></i> Drammatically Engage</li>
+				    <li class="progress-bar">
+				    	<div class="w3-light-grey">
+				    		<div class="w3-container w3-round w3-green w3-center" style="width:100%">100% Proactively Envisioned</div>
+				    	</div>
+				    	<div class="w3-light-grey">
+				    		<div class="w3-container w3-round w3-blue w3-center" style="width:80%">80% Objectively Innovated</div>
+				    	</div>
+				    	<div class="w3-light-grey">
+				    		<div class="w3-container w3-round w3-yellow w3-center" style="width:45%">45% Portalled</div>
+				    	</div>
+				    	<div class="w3-light-grey">
+				    		<div class="w3-container w3-round w3-red w3-center" style="width:35%">35% Done</div>
+				    	</div>
+				    </li>
+			  	</ul>
+
+			  	<ul class="w3-ul w3-round w3-border">
+				    <li class="w3-light-grey"><i class="fa fa-bullhorn"></i> Active Predomination</li>
+				    <li>Proactively envisioned multimedia based expertise and cross-media
+						growth strategies. <br><br><button class="w3-button w3-white w3-border w3-round">Resource</button><button class="w3-button w3-white w3-border w3-round">Envision</button><button class="w3-button w3-white w3-border w3-round">Niche</button>
+					</li>   
+			  	</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="footer-one w3-light-grey">
+			<div>
+				<h3><i class='fa fa-text-width' style='font-size:24px'></i> Dynamic</h3>
+				<p>Collaboratively administrative empowered markets via plug-and-play networks. Dynamically procastinate B2C users after installed benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+				<button class="w3-button w3-white w3-border w3-round">Procastinate</button>
+			</div>
+			<div>
+				<h3><i class='fa fa-wrench' style='font-size:24px'></i> Efficient</h3>
+				<p>Collaboratively administrative empowered markets via plug-and-play networks. Dynamically procastinate B2C users after installed benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+				<button class="w3-button w3-white w3-border w3-round">Unleash</button>
+			</div>
+			<div>
+				<h3><i class='fa fa-paperclip' style='font-size:24px'></i> Complete</h3>
+				<p>Collaboratively administrative empowered markets via plug-and-play networks. Dynamically procastinate B2C users after installed benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+				<button class="w3-button w3-white w3-border w3-round">Complete</button>
+			</div>
+			<div>
+				<h3><i class='fa fa-camera' style='font-size:24px'></i> Photofluorescent</h3>
+				<table style="border-collapse: separate;
+				border-spacing: 35px 20px;" >
+					<tr>
+						<td>
+							<div style="border:5px solid white;text-align:center;width:110px;height:80px;background-color: rgb(223, 219, 219);" >
+							</div>
+						</td>
+						<td>
+							<div style="border:5px solid white;text-align:center;width:110px;height:80px;background-color: rgb(223, 219, 219);">
+							</div>
+						</td>
+
+					</tr>
+					<tr>
+						<td>
+							<div style="border:5px solid white;text-align:center;width:110px;height:80px;background-color: rgb(223, 219, 219);" >
+							</div>
+						</td>
+						<td>
+							<div style="border:5px solid white;text-align:center;width:110px;height:80px;background-color: rgb(223, 219, 219);" >
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div style="text-align: center;">
+			<p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+			<p>Copyright &copy; Example.com 2015</p>
+		</div>
+	</footer>
+</body>
+</html>
