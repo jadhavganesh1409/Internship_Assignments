@@ -2,6 +2,8 @@
 
 # dependencies
 /React/CarData/node_modules
+/React/hello/node_modules
+
 /.pnp
 .pnp.js
 
